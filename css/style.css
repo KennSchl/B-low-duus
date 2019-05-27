@@ -2,6 +2,9 @@ body {
   margin: 0 auto;
   font-family: arial;
 }
+main {
+  max-width: 1920px;
+}
 .topnav {
   background-image: url(../images/pusteriet_small.jpg);
   background-size: cover;
@@ -58,13 +61,12 @@ body {
 /* ---------------------------*/
 
 /* ------- cinemagraph -------*/
-.cinemagraph {
+.hero-image {
+  margin-top: 2%;
 }
-.cinemagraph img {
+.hero-image img {
   width: 100%;
 }
-
-
 /* ------- 3-split-row -------- */
 .column {
   float: left;
@@ -96,7 +98,7 @@ body {
   width: 49vw;
   height: 500px;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   position: relative;
   overflow: hidden;
   float: left;
@@ -149,7 +151,7 @@ body {
   width: 49vw;
   height: 500px;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   position: relative;
   overflow: hidden;
   float: left;
@@ -203,6 +205,78 @@ body {
   float: left;
   margin-left: 2%;
 }
+
+/* -------------------------- */
+/* -------- events.html -------*/
+/* ---------------------------*/
+.wide {
+  width: 96%;
+  margin-left: 4%;
+  margin-right: 2%;
+}
+
+.module-event-1 {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/placeholder.jpg);
+  background-size: cover;
+  width: 96%;
+  height: 700px;
+  position: relative;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cap-event-1 h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.cap-event-1 p {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font: 12px Monaco, Mono-Space;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+.module-event-2 {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/placeholder.jpg);
+  background-size: cover;
+  width: 96%;
+  height: 700px;
+  position: relative;
+  float: left;
+  margin-bottom: 5%;
+}
+.cap-event-2 h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-top: 12%;
+}
+.cap-event-2 p {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font: 12px Monaco, Mono-Space;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 
 /* --- Footer --- */
 footer {
