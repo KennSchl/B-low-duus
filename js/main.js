@@ -11,57 +11,70 @@ function myFunction() {
 
 
 
-
-
-
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function() {
-  init();
-});
+let sheetId = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
+let sheetNumber = 1;
+let sheetUrl = "https://spreadsheets.google.com/feeds/list/" + sheetId + "/" + sheetNumber + "/public/full?alt=json";
+console.log(sheetUrl);
 
-const config = {
-  apiKey: "AIzaSyC4rLZZxvn14RDvK1SNMFHWy7IjKBmYWfo",
-  authDomain: "bulow-duus.firebaseapp.com",
-  databaseURL: "https://bulow-duus.firebaseio.com",
-  projectId: "bulow-duus",
-  storageBucket: "bulow-duus.appspot.com",
-  messagingSenderId: "1023168250577",
-  appId: "1:1023168250577:web:10e2fd444bec6da0"
-};
+fetch(sheetUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
+    appendEventsEt(json.feed.entry);
+  });
 
-firebase.initializeApp(config);
-const database = firebase.database();
+  fetch(sheetUrl)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(json) {
+      console.log(json);
+      appendEventsTo(json.feed.entry);
+    });
 
-let selectedPostKey;
-let selectedImgFile;
-let posts = [];
 
-function init() {
 
-  readPosts();
+
+/*
+Appends json data to the DOM
+*/
+function appendEventsEt(eventsEt) {
+  console.log(eventsEt);
+  let htmlTemplate = "";
+  for (let eventEt of eventsEt) {
+    htmlTemplate += `
+        <section class="module-event-1" style="background:url('${eventEt['gsx$eventetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="cap-event-1">
+            <h1>${eventEt['gsx$eventettitel']['$t']}</h1>
+          </section>
+          <section class="cap-event-1">
+            <p>${eventEt['gsx$eventettekst']['$t']}</p>
+          </section>
+      `;
+  }
+  document.querySelector("#eventEt").innerHTML += htmlTemplate;
 }
 
-// ------ CRUD operations ------ //
-
-function readPosts() {
-  firebase.database().ref('posts').on('value', function(snapshots) {
-    let htmlTemplate = "";
-    snapshots.forEach(function(snapshot) {
-      let key = snapshot.key; // saves the key value in the variable key
-      let post = snapshot.val(); // saves the data in the variable user
-      post.key = key; // addes the key to my user object
-      posts.push(post);
-      htmlTemplate += `
-      <section class="module-event-1" style="linear-gradient(
-            rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)); background:url('${post.image}');background-size:cover;background-repeat: no-repeat;">
-          <section class="cap-event-1"><h1>${post.title}</h1></span></section>
-        <section class="cap-event-1">
-          <p>${post.content}</p>
-      </section>
-    </div>
-    `;
-    });
-    document.querySelector('#postFeed').innerHTML = htmlTemplate;
-  });
+function appendEventsTo(eventsTo) {
+  console.log(eventsTo);
+  let htmlTemplate = "";
+  for (let eventTo of eventsTo) {
+    htmlTemplate += `
+        <section class="module-event-2" style="background:url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="cap-event-2">
+            <h1>${eventTo['gsx$eventtotitel']['$t']}</h1>
+          </section>
+          <section class="cap-event-2">
+            <p>${eventTo['gsx$eventtotekst']['$t']}</p>
+            <p>${eventTo['gsx$eventtotekstto']['$t']}</p>
+            <p>${eventTo['gsx$eventtoteksttre']['$t']}</p>
+            <p>${eventTo['gsx$eventtotekstfire']['$t']}</p>
+          </section>
+      `;
+  }
+  document.querySelector("#eventTo").innerHTML += htmlTemplate;
 }
