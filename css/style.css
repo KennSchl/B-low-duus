@@ -5,6 +5,10 @@ body {
 main {
   max-width: 1920px;
 }
+#åbningstider {
+  margin: 0 auto;
+  padding: 0 auto;
+}
 .topnav {
   background-image: url(../images/pusteriet_small.jpg);
   background-size: cover;
