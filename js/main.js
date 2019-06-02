@@ -58,7 +58,7 @@ function appendEventsTo(eventsTo) {
   let htmlTemplate = "";
   for (let eventTo of eventsTo) {
     htmlTemplate += `
-        <section class="module-event-2" style="background:url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module-event-1" style="background:url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-2">
             <h1>${eventTo['gsx$eventtotitel']['$t']}</h1>
             <p>${eventTo['gsx$eventtotekst']['$t']}</p>
@@ -267,8 +267,8 @@ function appendProduktEt(produkterEt) {
   let htmlTemplate = "";
   for (let produktEt of produkterEt) {
     htmlTemplate += `
-        <section class="module-left" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
-          <section class="module-left-text">
+        <section class="module" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="module-text">
             <h1>${produktEt['gsx$produktettext']['$t']}</h1>
           </section>
         </section>
@@ -282,8 +282,8 @@ function appendProduktTo(produkterTo) {
   let htmlTemplate = "";
   for (let produktTo of produkterTo) {
     htmlTemplate += `
-        <section class="module-right" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
-          <section class="module-right-text">
+        <section class="module" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="module-text">
             <h1>${produktTo['gsx$produkttotext']['$t']}</h1>
           </section>
         </section>

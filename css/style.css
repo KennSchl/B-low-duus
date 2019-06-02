@@ -5,10 +5,6 @@ body {
 main {
   max-width: 1920px;
 }
-#åbningstider {
-  margin: 0 auto;
-  padding: 0 auto;
-}
 .topnav {
   background-image: url(../images/pusteriet_small.jpg);
   background-size: cover;
@@ -95,7 +91,7 @@ main {
 }
 
 /* ------------- images -----------*/
-.module-left {
+.module {
   background: url(../images/placeholder.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -107,7 +103,7 @@ main {
   overflow: hidden;
   float: left;
 }
-.module-left > .module-left-text {
+.module > .module-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -116,7 +112,7 @@ main {
   background: inherit;
   overflow: hidden;
 }
-.module-left > .module-left-text::before {
+.module > .module-text::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -127,7 +123,7 @@ main {
   -webkit-filter: blur(4px);
   filter: blur(4px);
 }
-.module-left > .module-left-text::after {
+.module > .module-text::after {
   content: "";
   position: absolute;
   top: 0;
@@ -136,60 +132,7 @@ main {
   height: 100%;
   background: rgba(0, 0, 0, 0.25)
 }
-.module-left > .module-left-text > h1 {
-  margin: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  font-size: 2rem;
-  color: white;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-
-.module-right {
-  background: url(../images/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 49vw;
-  height: 500px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  position: relative;
-  overflow: hidden;
-  float: left;
-}
-.module-right > .module-right-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10px;
-  background: inherit;
-  overflow: hidden;
-}
-.module-right > .module-right-text::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background: inherit;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-.module-right > .module-right-text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25)
-}
-.module-right > .module-right-text > h1 {
+.module > .module-text > h1 {
   margin: 0;
   padding-top: 10%;
   padding-bottom: 10%;
@@ -348,25 +291,6 @@ main {
   margin: 0;
   font-size: 1.5rem;
 }
-
-
-
-
-
-.module-event-2 {
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/placeholder.jpg);
-  background-size: cover;
-  width: 96%;
-  height: 700px;
-  position: relative;
-  float: left;
-  margin-bottom: 5%;
-}
 .cap-event-2 h1 {
   text-align: center;
   color: white;
@@ -381,10 +305,6 @@ main {
   margin: 0;
   font-size: 1.5rem;
 }
-
-
-
-
 /* --- Footer --- */
 footer {
     display: flex;
@@ -396,33 +316,13 @@ footer h2 {
     font-size: 1.2rem;
     border-bottom: 2px solid rgb(0,0,0);
 }
-
-.some img {
-    width: 25%;
-}
-
-.footer-section-1 {
+.footer-section {
     float: left;
     width: 30%;
     margin-left: 2%;
     text-align: center;
 }
-
-.footer-section-2 {
-    float: left;
-    width: 30%;
-    margin-left: 3%;
-    text-align: center;
-}
-
-
-.footer-section-3 {
-    float: left;
-    width: 30%;
-    margin-left: 3%;
-    text-align: center;
-}
-.footer-section-3 img {
+.footer-section img {
   width: 60px;
   height: 60px;
   margin-left: 0%;
