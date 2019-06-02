@@ -24,6 +24,14 @@ fetch(sheetUrl)
   .then(function(json) {
     console.log(json);
     appendEventsEt(json.feed.entry);
+  });
+
+fetch(sheetUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendEventsTo(json.feed.entry);
   });
 
@@ -79,9 +87,26 @@ fetch(sheetUrlTo)
   .then(function(json) {
     console.log(json);
     appendFooterSectionEt(json.feed.entry);
+  });
+
+fetch(sheetUrlTo)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendFooterSectionTo(json.feed.entry);
+  });
+
+fetch(sheetUrlTo)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendFooterSectionTre(json.feed.entry);
   });
+
 
 function appendFooterSectionEt(sectionsEt) {
   console.log(sectionsEt);
@@ -138,8 +163,32 @@ fetch(sheetUrlTre)
   .then(function(json) {
     console.log(json);
     appendHeaderImage(json.feed.entry);
+  });
+
+fetch(sheetUrlTre)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendColumnEt(json.feed.entry);
+  });
+
+fetch(sheetUrlTre)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendColumnTo(json.feed.entry);
+  });
+
+fetch(sheetUrlTre)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendColumnTre(json.feed.entry);
   });
 
@@ -150,6 +199,14 @@ fetch(sheetUrlTre)
   .then(function(json) {
     console.log(json);
     appendProduktEt(json.feed.entry);
+  });
+
+fetch(sheetUrlTre)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendProduktTo(json.feed.entry);
   });
 
@@ -249,13 +306,74 @@ fetch(sheetUrlFire)
   .then(function(json) {
     console.log(json);
     appendTopLeft(json.feed.entry);
+  });
+
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendTopCenter(json.feed.entry);
+  });
+
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendTopRight(json.feed.entry);
+  });
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterLeft(json.feed.entry);
+  });
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterCenter(json.feed.entry);
+  });
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterRight(json.feed.entry);
+  });
+
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotLeft(json.feed.entry);
+  });
+
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotCenter(json.feed.entry);
+  });
+
+fetch(sheetUrlFire)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotRight(json.feed.entry);
   });
 
@@ -408,13 +526,74 @@ fetch(sheetUrlFem)
   .then(function(json) {
     console.log(json);
     appendTopLeftEveryday(json.feed.entry);
+  });
+
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendTopCenterEveryday(json.feed.entry);
+  });
+
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendTopRightEveryday(json.feed.entry);
+  });
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterLeftEveryday(json.feed.entry);
+  });
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterCenterEveryday(json.feed.entry);
+  });
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendCenterRightEveryday(json.feed.entry);
+  });
+
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotLeftEveryday(json.feed.entry);
+  });
+
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotCenterEveryday(json.feed.entry);
+  });
+
+fetch(sheetUrlFem)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json);
     appendBotRightEveryday(json.feed.entry);
   });
 
