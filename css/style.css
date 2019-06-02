@@ -96,7 +96,7 @@ body {
 /* -------- index.html -------*/
 /* ---------------------------*/
 
-/* ------- cinemagraph -------*/
+/* ------- cHero Image -------*/
 .hero-image {
   margin-top: 2%;
 }
@@ -125,12 +125,21 @@ body {
   display: table;
   clear: both;
 }
+/* ------------- Unika & Everyday -----------*/
 
-/* ------------- images -----------*/
+/* ----- 2 rows ----- */
+.split-2 {
+  width: 49%;
+  float: left;
+}
+.split-2-right {
+  width: 49%;
+  float: left;
+  margin-left: 2%;
+}
+
+/* ---- Container ---- */
 .module {
-  background: url(../images/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 49vw;
   height: 500px;
   margin-top: 5%;
@@ -146,17 +155,6 @@ body {
   width: 100%;
   padding: 20px 10px;
   overflow: hidden;
-  z-index: 999;
-}
-.module > .module-text::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
 }
 .module > .module-text::after {
   content: "";
@@ -178,28 +176,11 @@ body {
   text-align: center;
 }
 
-.split-2 {
-  width: 49%;
-  float: left;
-}
-.split-2-right {
-  width: 49%;
-  float: left;
-  margin-left: 2%;
-}
+/* --------------- */
+/* -- om_os.html-- */
+/* --------------- */
 
-/* ---------- */
-/* -- om_os-- */
-/* ---------- */
 .om-os-wide {
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 700px;
   margin-top: 5%;
@@ -219,6 +200,11 @@ body {
 
 }
 
+/* -------------------- */
+/* -- Produktion.html-- */
+/* -------------------- */
+
+/* ----- 3 rows ----- */
 
 .split-3-left {
   width: 31%;
@@ -236,10 +222,9 @@ body {
   margin-left: 2%;
 }
 
+/* ----- Container ----- */
+
 .split-3 {
-  background: url(../images/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 31vw;
   height: 500px;
   margin-top: 5%;
@@ -289,21 +274,15 @@ body {
 /* -------------------------- */
 /* -------- events.html -------*/
 /* ---------------------------*/
+
+/* ------- Hero image ------- */
 .wide {
   width: 96%;
   margin-left: 4%;
   margin-right: 2%;
 }
-
+/* ------- Container ------- */
 .module-event-1 {
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/placeholder.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 96%;
   height: 700px;
   position: relative;
@@ -320,7 +299,6 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
-  font: 12px Monaco, Mono-Space;
   margin: 0;
   font-size: 1.5rem;
 }
@@ -334,7 +312,6 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
-  font: 12px Monaco, Mono-Space;
   margin: 0;
   font-size: 1.5rem;
 }

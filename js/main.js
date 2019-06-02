@@ -43,7 +43,7 @@ function appendEventsEt(eventsEt) {
   let htmlTemplate = "";
   for (let eventEt of eventsEt) {
     htmlTemplate += `
-        <section class="module-event-1" style="background:url('${eventEt['gsx$eventetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module-event-1" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('${eventEt['gsx$eventetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-1">
             <h1>${eventEt['gsx$eventettitel']['$t']}</h1>
           </section>
@@ -58,7 +58,7 @@ function appendEventsTo(eventsTo) {
   let htmlTemplate = "";
   for (let eventTo of eventsTo) {
     htmlTemplate += `
-        <section class="module-event-1" style="background:url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module-event-1" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-2">
             <h1>${eventTo['gsx$eventtotitel']['$t']}</h1>
             <p>${eventTo['gsx$eventtotekst']['$t']}</p>
@@ -143,7 +143,7 @@ function appendFooterSectionTre(sectionsTre) {
   for (let sectionTre of sectionsTre) {
     htmlTemplate += `
               <h2>${sectionTre['gsx$sectiontretitel']['$t']}</h2>
-              <a href="${sectionTre['gsx$sectiontrelink']['$t']}"><img src="images/facebook-logo.svg" alt="Bülow Duus Facebook"></a>
+              <a href="${sectionTre['gsx$sectiontrelink']['$t']}"><img src="images/facebook.svg" alt="Bülow Duus Facebook"></a>
             `;
   }
   document.querySelector("#sectionTre").innerHTML += htmlTemplate;
