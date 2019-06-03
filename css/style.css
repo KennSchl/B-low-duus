@@ -340,6 +340,9 @@ footer h2 {
 
 /* --------------- Media querys ------------ */
 @media screen and (max-width: 380px) {
+
+
+/*----Header-----*/
 .topnav responsive {
   width: 40%;
 }
@@ -347,7 +350,9 @@ footer h2 {
 .dropbtn a{
   margin-left: -2%;
 }
+/*----Header end-----*/
 
+/*----Åbningstider-----*/
 .filter a{
   width: 30%;
 }
@@ -372,7 +377,26 @@ footer h2 {
 .module {
   width: 100%;
 }
+/*----Åbningstider end-----*/
 
+/*----unika start----*/
+.split-3-left{
+  width: 100%;
+}
+
+.split-3{
+  width: 100%;
+}
+
+.split-3-center{
+  width: 100%;
+}
+
+.split-3-right{
+  width: 100%;
+}
+
+/*----footer-----*/
 .footer-section {
   width: 100%;
 }
@@ -380,6 +404,115 @@ footer h2 {
 
 }
 
+@media screen and (max-width: 530px) {
+/*----header start----*/
+.topnav responsive {
+  width: 40%;
+}
+
+.dropbtn a{
+  margin-left: -2%;
+}
+
+/*----content start----*/
+  .filter a{
+    width: 30%;
+  }
+    .column {
+      width: 100%;
+      min-height: 150px;
+    }
+
+
+  .split-2{
+    width: 100%;
+  }
+
+  .module{
+    width: 100%;
+  }
+
+  .split-2-right{
+    width: 100%;
+  }
+
+  .module {
+    width: 100%;
+  }
+
+  /*----content end----*/
+
+
+}
+
+@media screen and (max-width: 700px) {
+/*----header start----*/
+.topnav responsive {
+  width: 40%;
+}
+
+.dropbtn a{
+  margin-left: -2%;
+}
+
+/*----content start----*/
+  .filter a{
+    width: 30%;
+  }
+    .column {
+      width: 100%;
+      min-height: 150px;
+    }
+
+
+  .split-2{
+    width: 100%;
+  }
+
+  .module{
+    width: 100%;
+  }
+
+  .split-2-right{
+    width: 100%;
+  }
+
+  .module {
+    width: 100%;
+  }
+
+  /*----content end----*/
+
+
+}
+
+
+@media screen and (max-width: 799px) {
+/*----header start----*/
+
+.topnav a {
+  width: 20%;
+}
+
+.dropbtn a{
+  margin-left: -2%;
+}
+
+.split-3-left{
+  width: 100%;
+}
+
+.split-3{
+  width: 100%;
+}
+
+.split-3-center{
+  width: 100%;
+}
+
+.split-3-right{
+  width: 100%;
+}
 /*-----------------------------*/
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -408,8 +541,31 @@ footer h2 {
     width: 100%;
     text-align: left;
   }
-}
-@media screen and (max-width: 800px) {
+
+  /*---content----*/
+  .column {
+    width: 50%;
+    min-height: 150px;
+    margin-top: 3%;
+  }
+
+  .split-2{
+  width: 100%;
+  }
+
+  .module{
+  width: 100%;
+  }
+
+  .split-2-right{
+  width: 100%;
+  }
+
+  .module {
+  width: 100%;
+  }
+
+
   /* --- footer --- */
   .footer-section-1 {
     display: block;
@@ -418,4 +574,13 @@ footer h2 {
   .column {
   width: 100%;
   }
+}
+/*---*/
+
+
+@media screen and (max-width: 900px) {}
+.filter a {
+  margin-bottom: 0;
+
+}
 }
