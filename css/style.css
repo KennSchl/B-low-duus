@@ -340,9 +340,10 @@ footer h2 {
 
 /* --------------- Media querys ------------ */
 @media screen and (max-width: 380px) {
-/*.topnav responsive {
+.topnav responsive {
   width: 40%;
-} */
+}
+
 .dropbtn a{
   margin-left: -2%;
 }
@@ -354,6 +355,8 @@ footer h2 {
     width: 100%;
     min-height: 150px;
   }
+
+
 .split-2{
   width: 100%;
 }
@@ -370,26 +373,14 @@ footer h2 {
   width: 100%;
 }
 
-footer {
-    width: 100%;
-}
-
-}
 .footer-section {
-    width: 30%;
-    margin-left: 2%;
-}
-
-.footer-section img {
-  width: 60px;
-  height: 60px;
-  margin-left: 0%;
+  width: 100%;
 }
 
 
 }
 
-
+/*-----------------------------*/
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
