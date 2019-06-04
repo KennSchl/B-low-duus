@@ -54,7 +54,7 @@ function appendEventsTo(eventsTo) {
     htmlTemplate += `
         <section class="module-event-1" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-2">
-            <h1>${eventTo['gsx$eventtotitel']['$t']}</h1>
+            <h2>${eventTo['gsx$eventtotitel']['$t']}</h2>
             <p>${eventTo['gsx$eventtotekst']['$t']}</p>
             <p>${eventTo['gsx$eventtotekstto']['$t']}</p>
             <p>${eventTo['gsx$eventtoteksttre']['$t']}</p>

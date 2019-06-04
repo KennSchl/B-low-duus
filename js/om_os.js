@@ -24,7 +24,7 @@ function appendOmOsImage(omOsImages) {
           <section class="wide-text" style="background:url('${omOsImage['gsx$omosbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           </section>
           <section class="wide-text">
-            <h2>${omOsImage['gsx$omostitelet']['$t']}</h2>
+            <h1>${omOsImage['gsx$omostitelet']['$t']}</h1>
             <p>${omOsImage['gsx$omostextet']['$t']}</p>
             <p>${omOsImage['gsx$omostextto']['$t']}</p>
             <h2>${omOsImage['gsx$omostitelto']['$t']}</h2>

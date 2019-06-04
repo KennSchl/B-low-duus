@@ -32,7 +32,11 @@ function appendHeaderImage(headerImages) {
   let htmlTemplate = "";
   for (let headerImage of headerImages) {
     htmlTemplate += `
-          <img src="${headerImage['gsx$heroimage']['$t']}">
+    <section class="module-wide" style="background:url('${headerImage['gsx$heroimage']['$t']}');background-size:cover;background-repeat: no-repeat;">
+      <section class="module-wide-text">
+        <h1>${headerImage['gsx$heroimagetext']['$t']}</h1>
+      </section>
+    </section>
               `;
   }
   document.querySelector("#headerImage").innerHTML += htmlTemplate;
@@ -87,7 +91,7 @@ function appendProduktEt(produkterEt) {
     <a href="unika.html">
         <section class="module" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h1>${produktEt['gsx$produktettext']['$t']}</h1>
+            <h2>${produktEt['gsx$produktettext']['$t']}</h2>
           </section>
         </section>
         </a>
@@ -104,7 +108,7 @@ function appendProduktTo(produkterTo) {
     <a href="everyday.html">
         <section class="module" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h1>${produktTo['gsx$produkttotext']['$t']}</h1>
+            <h2>${produktTo['gsx$produkttotext']['$t']}</h2>
           </section>
         </section>
       </a>

@@ -47,7 +47,7 @@ function appendTopLeftEveryday(topLeftsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topLeftEveryday['gsx$toplefteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topLeftEveryday['gsx$toplefteveryday']['$t']}</h1>
+              <h2>${topLeftEveryday['gsx$toplefteveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -62,7 +62,7 @@ function appendTopCenterEveryday(topCentersEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topCenterEveryday['gsx$topcentereverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topCenterEveryday['gsx$topcentereveryday']['$t']}</h1>
+              <h2>${topCenterEveryday['gsx$topcentereveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -77,7 +77,7 @@ function appendTopRightEveryday(topRightsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topRightEveryday['gsx$toprighteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topRightEveryday['gsx$toprighteveryday']['$t']}</h1>
+              <h2>${topRightEveryday['gsx$toprighteveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -92,7 +92,7 @@ function appendCenterLeftEveryday(centerLeftsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerLeftEveryday['gsx$centerlefteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerLeftEveryday['gsx$centerlefteveryday']['$t']}</h1>
+              <h2>${centerLeftEveryday['gsx$centerlefteveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -107,7 +107,7 @@ function appendCenterCenterEveryday(centerCentersEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerCenterEveryday['gsx$centercentereverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerCenterEveryday['gsx$centercentereveryday']['$t']}</h1>
+              <h2>${centerCenterEveryday['gsx$centercentereveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -122,7 +122,7 @@ function appendCenterRightEveryday(centerRightsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerRightEveryday['gsx$centerrighteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerRightEveryday['gsx$centerrighteveryday']['$t']}</h1>
+              <h2>${centerRightEveryday['gsx$centerrighteveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -137,7 +137,7 @@ function appendBotLeftEveryday(botLeftsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botLeftEveryday['gsx$botlefteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botLeftEveryday['gsx$botlefteveryday']['$t']}</h1>
+              <h2>${botLeftEveryday['gsx$botlefteveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -152,7 +152,7 @@ function appendBotCenterEveryday(botCentersEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botCenterEveryday['gsx$botcentereverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botCenterEveryday['gsx$botcentereveryday']['$t']}</h1>
+              <h2>${botCenterEveryday['gsx$botcentereveryday']['$t']}</h2>
             </section>
           </section>
         `;
@@ -167,7 +167,7 @@ function appendBotRightEveryday(botRightsEveryday) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botRightEveryday['gsx$botrighteverydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botRightEveryday['gsx$botrighteveryday']['$t']}</h1>
+              <h2>${botRightEveryday['gsx$botrighteveryday']['$t']}</h2>
             </section>
           </section>
         `;

@@ -46,7 +46,7 @@ function appendTopLeft(topLefts) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topLeft['gsx$topleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topLeft['gsx$topleft']['$t']}</h1>
+              <h2>${topLeft['gsx$topleft']['$t']}</h2>
             </section>
           </section>
         `;
@@ -61,7 +61,7 @@ function appendTopCenter(topCenters) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topCenter['gsx$topcenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topCenter['gsx$topcenter']['$t']}</h1>
+              <h2>${topCenter['gsx$topcenter']['$t']}</h2>
             </section>
           </section>
         `;
@@ -76,7 +76,7 @@ function appendTopRight(topRights) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${topRight['gsx$toprightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${topRight['gsx$topright']['$t']}</h1>
+              <h2>${topRight['gsx$topright']['$t']}</h2>
             </section>
           </section>
         `;
@@ -91,7 +91,7 @@ function appendCenterLeft(centerLefts) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerLeft['gsx$centerleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerLeft['gsx$centerleft']['$t']}</h1>
+              <h2>${centerLeft['gsx$centerleft']['$t']}</h2>
             </section>
           </section>
         `;
@@ -106,7 +106,7 @@ function appendCenterCenter(centerCenters) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerCenter['gsx$centercenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerCenter['gsx$centercenter']['$t']}</h1>
+              <h2>${centerCenter['gsx$centercenter']['$t']}</h2>
             </section>
           </section>
         `;
@@ -121,7 +121,7 @@ function appendCenterRight(centerRights) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${centerRight['gsx$centerrightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${centerRight['gsx$centerright']['$t']}</h1>
+              <h2>${centerRight['gsx$centerright']['$t']}</h2>
             </section>
           </section>
         `;
@@ -136,7 +136,7 @@ function appendBotLeft(botLefts) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botLeft['gsx$botleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botLeft['gsx$botleft']['$t']}</h1>
+              <h2>${botLeft['gsx$botleft']['$t']}</h2>
             </section>
           </section>
         `;
@@ -151,7 +151,7 @@ function appendBotCenter(botCenters) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botCenter['gsx$botcenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botCenter['gsx$botcenter']['$t']}</h1>
+              <h2>${botCenter['gsx$botcenter']['$t']}</h2>
             </section>
           </section>
         `;
@@ -166,7 +166,7 @@ function appendBotRight(botRights) {
     htmlTemplate += `
           <section class="split-3" style="background:url('${botRight['gsx$botrightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h1>${botRight['gsx$botright']['$t']}</h1>
+              <h2>${botRight['gsx$botright']['$t']}</h2>
             </section>
           </section>
         `;

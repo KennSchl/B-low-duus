@@ -16,11 +16,11 @@ fetch(sheetUrlTre)
     appendTextProduktion(json.feed.entry);
   });
 
-  function appendTextProduktion(appendTextsProduktion) {
-    console.log(appendTextsProduktion);
-    let htmlTemplate = "";
-    for (let appendTextProduktion of appendTextsProduktion) {
-      htmlTemplate += `
+function appendTextProduktion(appendTextsProduktion) {
+  console.log(appendTextsProduktion);
+  let htmlTemplate = "";
+  for (let appendTextProduktion of appendTextsProduktion) {
+    htmlTemplate += `
             <section class="wide-text">
               <h1>${appendTextProduktion['gsx$titel']['$t']}</h1>
               <p>${appendTextProduktion['gsx$textet']['$t']}</p>
@@ -28,9 +28,9 @@ fetch(sheetUrlTre)
               <p>${appendTextProduktion['gsx$texttre']['$t']}</p>
             </section>
           `;
-    }
-    document.querySelector("#appendText").innerHTML += htmlTemplate;
   }
+  document.querySelector("#appendText").innerHTML += htmlTemplate;
+}
 
 function appendProduktEt(produkterEt) {
   console.log(produkterEt);
@@ -40,7 +40,7 @@ function appendProduktEt(produkterEt) {
     <a href="unika.html">
         <section class="module" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h1>${produktEt['gsx$produktettext']['$t']}</h1>
+            <h2>${produktEt['gsx$produktettext']['$t']}</h2>
           </section>
         </section>
         </a>
@@ -57,7 +57,7 @@ function appendProduktTo(produkterTo) {
     <a href="everyday.html">
         <section class="module" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h1>${produktTo['gsx$produkttotext']['$t']}</h1>
+            <h2>${produktTo['gsx$produkttotext']['$t']}</h2>
           </section>
         </section>
       </a>
