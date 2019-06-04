@@ -35,7 +35,7 @@ function appendFooterSectionEt(sectionsEt) {
               <p>${sectionEt['gsx$sectionettekstet']['$t']}<p/>
               <p>${sectionEt['gsx$sectionettekstto']['$t']}<p/>
               <p>${sectionEt['gsx$sectionetteksttre']['$t']}<p/>
-              <p>${sectionEt['gsx$sectionettekstfire']['$t']}<p/>
+              <a href="mailto:${sectionEt['gsx$sectionettekstfire']['$t']}">${sectionEt['gsx$sectionettekstfire']['$t']}</a>
             `;
   }
   document.querySelector("#sectionEt").innerHTML += htmlTemplate;

@@ -49,7 +49,9 @@ function appendColumnEt(columnsEt) {
     htmlTemplate += `
         <h2>${columnEt['gsx$columnetoverskrift']['$t']}</h2>
         <p>${columnEt['gsx$columnettextet']['$t']}</p>
-        <p>${columnEt['gsx$columnettextto']['$t']}</p>
+        <p>Mail:
+          <a href="mailto:${columnEt['gsx$columnettextto']['$t']}">${columnEt['gsx$columnettextto']['$t']}</a>
+        </p>
           `;
   }
   document.querySelector("#columnEt").innerHTML += htmlTemplate;
