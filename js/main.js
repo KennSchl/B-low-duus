@@ -11,7 +11,7 @@ function myFunction() {
 "use strict";
 
 let sheetIdTo = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
-let sheetNumberTo = 2;
+let sheetNumberTo = 7;
 let sheetUrlTo = "https://spreadsheets.google.com/feeds/list/" + sheetIdTo + "/" + sheetNumberTo + "/public/full?alt=json";
 console.log(sheetUrlTo);
 
