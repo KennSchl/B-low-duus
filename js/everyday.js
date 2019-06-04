@@ -12,6 +12,7 @@ fetch(sheetUrlFem)
   })
   .then(function(json) {
     console.log(json);
+    appendTextEveryday(json.feed.entry);
     appendTopLeftEveryday(json.feed.entry);
     appendTopCenterEveryday(json.feed.entry);
     appendTopRightEveryday(json.feed.entry);
@@ -22,6 +23,22 @@ fetch(sheetUrlFem)
     appendBotCenterEveryday(json.feed.entry);
     appendBotRightEveryday(json.feed.entry);
   });
+
+  function appendTextEveryday(appendTextsEveryday) {
+    console.log(appendTextsEveryday);
+    let htmlTemplate = "";
+    for (let appendTextEveryday of appendTextsEveryday) {
+      htmlTemplate += `
+            <section class="wide-text">
+              <h1>${appendTextEveryday['gsx$titel']['$t']}</h1>
+              <p>${appendTextEveryday['gsx$textet']['$t']}</p>
+              <p>${appendTextEveryday['gsx$textto']['$t']}</p>
+              <p>${appendTextEveryday['gsx$texttre']['$t']}</p>
+            </section>
+          `;
+    }
+    document.querySelector("#appendText").innerHTML += htmlTemplate;
+  }
 
 function appendTopLeftEveryday(topLeftsEveryday) {
   console.log(topLeftsEveryday);

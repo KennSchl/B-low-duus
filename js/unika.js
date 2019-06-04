@@ -11,6 +11,7 @@ fetch(sheetUrlFire)
   })
   .then(function(json) {
     console.log(json);
+    appendText(json.feed.entry);
     appendTopLeft(json.feed.entry);
     appendTopCenter(json.feed.entry);
     appendTopRight(json.feed.entry);
@@ -21,6 +22,22 @@ fetch(sheetUrlFire)
     appendBotCenter(json.feed.entry);
     appendBotRight(json.feed.entry);
   });
+
+  function appendText(appendTexts) {
+    console.log(appendTexts);
+    let htmlTemplate = "";
+    for (let appendText of appendTexts) {
+      htmlTemplate += `
+            <section class="wide-text">
+              <h1>${appendText['gsx$titel']['$t']}</h1>
+              <p>${appendText['gsx$textet']['$t']}</p>
+              <p>${appendText['gsx$textto']['$t']}</p>
+              <p>${appendText['gsx$texttre']['$t']}</p>
+            </section>
+          `;
+    }
+    document.querySelector("#appendText").innerHTML += htmlTemplate;
+  }
 
 function appendTopLeft(topLefts) {
   console.log(topLefts);

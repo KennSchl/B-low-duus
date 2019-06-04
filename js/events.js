@@ -1,4 +1,3 @@
-
 "use strict";
 
 let sheetId = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
@@ -13,6 +12,7 @@ fetch(sheetUrl)
   .then(function(json) {
     console.log(json);
     appendEventsEt(json.feed.entry);
+    appendEventsEtText(json.feed.entry);
     appendEventsTo(json.feed.entry);
   });
 
@@ -32,6 +32,19 @@ function appendEventsEt(eventsEt) {
       `;
   }
   document.querySelector("#eventEt").innerHTML += htmlTemplate;
+}
+
+function appendEventsEtText(eventsEtText) {
+  console.log(eventsEtText);
+  let htmlTemplate = "";
+  for (let eventEtText of eventsEtText) {
+    htmlTemplate += `
+          <section class="wide-text-event">
+            <p>${eventEtText['gsx$eventettext']['$t']}</p>
+          </section>
+      `;
+  }
+  document.querySelector("#eventEtText").innerHTML += htmlTemplate;
 }
 
 function appendEventsTo(eventsTo) {

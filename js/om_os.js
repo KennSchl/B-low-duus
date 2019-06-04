@@ -21,9 +21,9 @@ function appendOmOsImage(omOsImages) {
   let htmlTemplate = "";
   for (let omOsImage of omOsImages) {
     htmlTemplate += `
-          <section class="om-os-wide" style="background:url('${omOsImage['gsx$omosbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="wide-text" style="background:url('${omOsImage['gsx$omosbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           </section>
-          <section class="om-os-text">
+          <section class="wide-text">
             <h2>${omOsImage['gsx$omostitelet']['$t']}</h2>
             <p>${omOsImage['gsx$omostextet']['$t']}</p>
             <p>${omOsImage['gsx$omostextto']['$t']}</p>
