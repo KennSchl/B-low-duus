@@ -128,9 +128,12 @@ body {
 /* ------------- Unika & Everyday -----------*/
 
 .wide-text {
-  width: 98%;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 100%;
+  margin-top: 3%;
+  text-align: center;
+}
+.wide-text h1 {
+  font-size: 1.5rem;
   text-align: center;
 }
 .wide-text h2 {
@@ -488,8 +491,6 @@ footer h2 {
   }
 
   /*----content end----*/
-
-
 }
 
 
@@ -523,6 +524,7 @@ footer h2 {
   margin-left: 0;
   width: 100%;
 }
+
 /*-----------------------------*/
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -574,8 +576,6 @@ footer h2 {
   .module {
   width: 100%;
   }
-
-
   /* --- footer --- */
   .footer-section-1 {
     display: block;
