@@ -10,7 +10,6 @@ fetch(sheetUrl)
   })
   .then(function(json) {
     appendEventsEt(json.feed.entry);
-    appendEventsEtText(json.feed.entry);
     appendEventsTo(json.feed.entry);
   });
 
@@ -18,32 +17,24 @@ fetch(sheetUrl)
 Appends json data to the DOM
 */
 function appendEventsEt(eventsEt) {
+  console.log(eventsEt);
   let htmlTemplate = "";
   for (let eventEt of eventsEt) {
     htmlTemplate += `
         <section class="module-event-1" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('${eventEt['gsx$eventetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-1">
             <h1>${eventEt['gsx$eventettitel']['$t']}</h1>
-          </section>
-        </section>
+              <section class="cap-event-1">
+                <p>${eventEt['gsx$eventettext']['$t']}</p>
+              </section>
+            </section>
       `;
   }
   document.querySelector("#eventEt").innerHTML += htmlTemplate;
 }
 
-function appendEventsEtText(eventsEtText) {
-  let htmlTemplate = "";
-  for (let eventEtText of eventsEtText) {
-    htmlTemplate += `
-          <section class="wide-text-event">
-            <p>${eventEtText['gsx$eventettext']['$t']}</p>
-          </section>
-      `;
-  }
-  document.querySelector("#eventEtText").innerHTML += htmlTemplate;
-}
-
 function appendEventsTo(eventsTo) {
+  console.log(eventsTo);
   let htmlTemplate = "";
   for (let eventTo of eventsTo) {
     htmlTemplate += `

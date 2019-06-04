@@ -5,7 +5,7 @@ body {
 
 /* ----- Header Menu ----- */
 .topnav {
-  background-image: url(../images/pusteriet_small.jpg);
+  background-image: url(../images/pusteriet.jpg);
   background-size: cover;
   overflow: hidden;
   background-color: #333;
@@ -284,8 +284,6 @@ body {
   left: 0;
   width: 200%;
   height: 200%;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
 }
 .split-3 > .split-3-text::after {
   content: "";
@@ -351,14 +349,6 @@ body {
   margin: 0;
   font-size: 1.5rem;
 }
-.wide-text-event {
-  width: 96%;
-  font-size: 1.5rem;
-  margin-left: 2%;
-  margin-right: 2%;
-  text-align: center;
-}
-
 /* --- Footer --- */
 footer {
     display: flex;
@@ -392,7 +382,7 @@ footer h2 {
 }
 
 .dropbtn a{
-  margin-left: -2%;
+  margin-left: -3%;
 }
 /*----Header end-----*/
 
