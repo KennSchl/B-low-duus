@@ -13,6 +13,7 @@ fetch(sheetUrlSeks)
   .then(function(json) {
     console.log(json);
     appendOmOsImage(json.feed.entry);
+    appendOmOsImageTo(json.feed.entry);
   });
 
 function appendOmOsImage(omOsImages) {
@@ -33,4 +34,16 @@ function appendOmOsImage(omOsImages) {
         `;
   }
   document.querySelector("#omOsBillede").innerHTML += htmlTemplate;
+}
+
+function appendOmOsImageTo(omOsImagesTo) {
+  console.log(omOsImagesTo);
+  let htmlTemplate = "";
+  for (let omOsImageTo of omOsImagesTo) {
+    htmlTemplate += `
+          <section class="om-os-wide" style="background:url('${omOsImageTo['gsx$omosbilledeto']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          </section>
+        `;
+  }
+  document.querySelector("#omOsBilledeTo").innerHTML += htmlTemplate;
 }
