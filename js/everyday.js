@@ -4,14 +4,12 @@
 let sheetIdFem = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumberFem = 4;
 let sheetUrlFem = "https://spreadsheets.google.com/feeds/list/" + sheetIdFem + "/" + sheetNumberFem + "/public/full?alt=json";
-console.log(sheetUrlFem);
 
 fetch(sheetUrlFem)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendTextEveryday(json.feed.entry);
     appendTopLeftEveryday(json.feed.entry);
     appendTopCenterEveryday(json.feed.entry);
@@ -25,7 +23,6 @@ fetch(sheetUrlFem)
   });
 
   function appendTextEveryday(appendTextsEveryday) {
-    console.log(appendTextsEveryday);
     let htmlTemplate = "";
     for (let appendTextEveryday of appendTextsEveryday) {
       htmlTemplate += `
@@ -41,7 +38,6 @@ fetch(sheetUrlFem)
   }
 
 function appendTopLeftEveryday(topLeftsEveryday) {
-  console.log(topLeftsEveryday);
   let htmlTemplate = "";
   for (let topLeftEveryday of topLeftsEveryday) {
     htmlTemplate += `
@@ -56,7 +52,6 @@ function appendTopLeftEveryday(topLeftsEveryday) {
 }
 
 function appendTopCenterEveryday(topCentersEveryday) {
-  console.log(topCentersEveryday);
   let htmlTemplate = "";
   for (let topCenterEveryday of topCentersEveryday) {
     htmlTemplate += `
@@ -71,7 +66,6 @@ function appendTopCenterEveryday(topCentersEveryday) {
 }
 
 function appendTopRightEveryday(topRightsEveryday) {
-  console.log(topRightsEveryday);
   let htmlTemplate = "";
   for (let topRightEveryday of topRightsEveryday) {
     htmlTemplate += `
@@ -86,7 +80,6 @@ function appendTopRightEveryday(topRightsEveryday) {
 }
 
 function appendCenterLeftEveryday(centerLeftsEveryday) {
-  console.log(centerLeftsEveryday);
   let htmlTemplate = "";
   for (let centerLeftEveryday of centerLeftsEveryday) {
     htmlTemplate += `
@@ -101,7 +94,6 @@ function appendCenterLeftEveryday(centerLeftsEveryday) {
 }
 
 function appendCenterCenterEveryday(centerCentersEveryday) {
-  console.log(centerCentersEveryday);
   let htmlTemplate = "";
   for (let centerCenterEveryday of centerCentersEveryday) {
     htmlTemplate += `
@@ -116,7 +108,6 @@ function appendCenterCenterEveryday(centerCentersEveryday) {
 }
 
 function appendCenterRightEveryday(centerRightsEveryday) {
-  console.log(centerRightsEveryday);
   let htmlTemplate = "";
   for (let centerRightEveryday of centerRightsEveryday) {
     htmlTemplate += `
@@ -131,7 +122,6 @@ function appendCenterRightEveryday(centerRightsEveryday) {
 }
 
 function appendBotLeftEveryday(botLeftsEveryday) {
-  console.log(botLeftsEveryday);
   let htmlTemplate = "";
   for (let botLeftEveryday of botLeftsEveryday) {
     htmlTemplate += `
@@ -146,7 +136,6 @@ function appendBotLeftEveryday(botLeftsEveryday) {
 }
 
 function appendBotCenterEveryday(botCentersEveryday) {
-  console.log(botCentersEveryday);
   let htmlTemplate = "";
   for (let botCenterEveryday of botCentersEveryday) {
     htmlTemplate += `
@@ -161,7 +150,6 @@ function appendBotCenterEveryday(botCentersEveryday) {
 }
 
 function appendBotRightEveryday(botRightsEveryday) {
-  console.log(botRightsEveryday);
   let htmlTemplate = "";
   for (let botRightEveryday of botRightsEveryday) {
     htmlTemplate += `

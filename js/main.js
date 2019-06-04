@@ -13,21 +13,18 @@ function myFunction() {
 let sheetIdTo = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumberTo = 7;
 let sheetUrlTo = "https://spreadsheets.google.com/feeds/list/" + sheetIdTo + "/" + sheetNumberTo + "/public/full?alt=json";
-console.log(sheetUrlTo);
 
 fetch(sheetUrlTo)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendFooterSectionEt(json.feed.entry);
     appendFooterSectionTo(json.feed.entry);
     appendFooterSectionTre(json.feed.entry);
   });
 
 function appendFooterSectionEt(sectionsEt) {
-  console.log(sectionsEt);
   let htmlTemplate = "";
   for (let sectionEt of sectionsEt) {
     htmlTemplate += `
@@ -42,7 +39,6 @@ function appendFooterSectionEt(sectionsEt) {
 }
 
 function appendFooterSectionTo(sectionsTo) {
-  console.log(sectionsTo);
   let htmlTemplate = "";
   for (let sectionTo of sectionsTo) {
     htmlTemplate += `
@@ -56,7 +52,6 @@ function appendFooterSectionTo(sectionsTo) {
 }
 
 function appendFooterSectionTre(sectionsTre) {
-  console.log(sectionsTre);
   let htmlTemplate = "";
   for (let sectionTre of sectionsTre) {
     htmlTemplate += `

@@ -3,14 +3,12 @@
 let sheetIdFire = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumberFire = 3;
 let sheetUrlFire = "https://spreadsheets.google.com/feeds/list/" + sheetIdFire + "/" + sheetNumberFire + "/public/full?alt=json";
-console.log(sheetUrlFire);
 
 fetch(sheetUrlFire)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendText(json.feed.entry);
     appendTopLeft(json.feed.entry);
     appendTopCenter(json.feed.entry);
@@ -24,7 +22,6 @@ fetch(sheetUrlFire)
   });
 
   function appendText(appendTexts) {
-    console.log(appendTexts);
     let htmlTemplate = "";
     for (let appendText of appendTexts) {
       htmlTemplate += `
@@ -40,7 +37,6 @@ fetch(sheetUrlFire)
   }
 
 function appendTopLeft(topLefts) {
-  console.log(topLefts);
   let htmlTemplate = "";
   for (let topLeft of topLefts) {
     htmlTemplate += `
@@ -55,7 +51,6 @@ function appendTopLeft(topLefts) {
 }
 
 function appendTopCenter(topCenters) {
-  console.log(topCenters);
   let htmlTemplate = "";
   for (let topCenter of topCenters) {
     htmlTemplate += `
@@ -70,7 +65,6 @@ function appendTopCenter(topCenters) {
 }
 
 function appendTopRight(topRights) {
-  console.log(topRights);
   let htmlTemplate = "";
   for (let topRight of topRights) {
     htmlTemplate += `
@@ -85,7 +79,6 @@ function appendTopRight(topRights) {
 }
 
 function appendCenterLeft(centerLefts) {
-  console.log(centerLefts);
   let htmlTemplate = "";
   for (let centerLeft of centerLefts) {
     htmlTemplate += `
@@ -100,7 +93,6 @@ function appendCenterLeft(centerLefts) {
 }
 
 function appendCenterCenter(centerCenters) {
-  console.log(centerCenters);
   let htmlTemplate = "";
   for (let centerCenter of centerCenters) {
     htmlTemplate += `
@@ -115,7 +107,6 @@ function appendCenterCenter(centerCenters) {
 }
 
 function appendCenterRight(centerRights) {
-  console.log(centerRights);
   let htmlTemplate = "";
   for (let centerRight of centerRights) {
     htmlTemplate += `
@@ -130,7 +121,6 @@ function appendCenterRight(centerRights) {
 }
 
 function appendBotLeft(botLefts) {
-  console.log(botLefts);
   let htmlTemplate = "";
   for (let botLeft of botLefts) {
     htmlTemplate += `
@@ -145,7 +135,6 @@ function appendBotLeft(botLefts) {
 }
 
 function appendBotCenter(botCenters) {
-  console.log(botCenters);
   let htmlTemplate = "";
   for (let botCenter of botCenters) {
     htmlTemplate += `
@@ -160,7 +149,6 @@ function appendBotCenter(botCenters) {
 }
 
 function appendBotRight(botRights) {
-  console.log(botRights);
   let htmlTemplate = "";
   for (let botRight of botRights) {
     htmlTemplate += `

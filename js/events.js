@@ -3,14 +3,12 @@
 let sheetId = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumber = 5;
 let sheetUrl = "https://spreadsheets.google.com/feeds/list/" + sheetId + "/" + sheetNumber + "/public/full?alt=json";
-console.log(sheetUrl);
 
 fetch(sheetUrl)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendEventsEt(json.feed.entry);
     appendEventsEtText(json.feed.entry);
     appendEventsTo(json.feed.entry);
@@ -20,7 +18,6 @@ fetch(sheetUrl)
 Appends json data to the DOM
 */
 function appendEventsEt(eventsEt) {
-  console.log(eventsEt);
   let htmlTemplate = "";
   for (let eventEt of eventsEt) {
     htmlTemplate += `
@@ -35,7 +32,6 @@ function appendEventsEt(eventsEt) {
 }
 
 function appendEventsEtText(eventsEtText) {
-  console.log(eventsEtText);
   let htmlTemplate = "";
   for (let eventEtText of eventsEtText) {
     htmlTemplate += `
@@ -48,7 +44,6 @@ function appendEventsEtText(eventsEtText) {
 }
 
 function appendEventsTo(eventsTo) {
-  console.log(eventsTo);
   let htmlTemplate = "";
   for (let eventTo of eventsTo) {
     htmlTemplate += `

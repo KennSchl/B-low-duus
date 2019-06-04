@@ -3,21 +3,18 @@
 let sheetIdTre = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumberTre = 2;
 let sheetUrlTre = "https://spreadsheets.google.com/feeds/list/" + sheetIdTre + "/" + sheetNumberTre + "/public/full?alt=json";
-console.log(sheetUrlTre);
 
 fetch(sheetUrlTre)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendProduktEt(json.feed.entry);
     appendProduktTo(json.feed.entry);
     appendTextProduktion(json.feed.entry);
   });
 
 function appendTextProduktion(appendTextsProduktion) {
-  console.log(appendTextsProduktion);
   let htmlTemplate = "";
   for (let appendTextProduktion of appendTextsProduktion) {
     htmlTemplate += `
@@ -33,7 +30,6 @@ function appendTextProduktion(appendTextsProduktion) {
 }
 
 function appendProduktEt(produkterEt) {
-  console.log(produkterEt);
   let htmlTemplate = "";
   for (let produktEt of produkterEt) {
     htmlTemplate += `
@@ -50,7 +46,6 @@ function appendProduktEt(produkterEt) {
 }
 
 function appendProduktTo(produkterTo) {
-  console.log(produkterTo);
   let htmlTemplate = "";
   for (let produktTo of produkterTo) {
     htmlTemplate += `

@@ -3,14 +3,12 @@
 let sheetIdTre = "1ZH1V7zZcbu_jMtnCVHGFnQQWmUBT35u_C4XFoydxn3Y";
 let sheetNumberTre = 1;
 let sheetUrlTre = "https://spreadsheets.google.com/feeds/list/" + sheetIdTre + "/" + sheetNumberTre + "/public/full?alt=json";
-console.log(sheetUrlTre);
 
 fetch(sheetUrlTre)
   .then(function(response) {
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendHeaderImage(json.feed.entry);
     appendColumnEt(json.feed.entry);
     appendColumnTo(json.feed.entry);
@@ -22,13 +20,11 @@ fetch(sheetUrlTre)
     return response.json();
   })
   .then(function(json) {
-    console.log(json);
     appendProduktEt(json.feed.entry);
     appendProduktTo(json.feed.entry);
   });
 
 function appendHeaderImage(headerImages) {
-  console.log(headerImages);
   let htmlTemplate = "";
   for (let headerImage of headerImages) {
     htmlTemplate += `
@@ -43,7 +39,6 @@ function appendHeaderImage(headerImages) {
 }
 
 function appendColumnEt(columnsEt) {
-  console.log(columnsEt);
   let htmlTemplate = "";
   for (let columnEt of columnsEt) {
     htmlTemplate += `
@@ -58,7 +53,6 @@ function appendColumnEt(columnsEt) {
 }
 
 function appendColumnTo(columnsTo) {
-  console.log(columnsTo);
   let htmlTemplate = "";
   for (let columnTo of columnsTo) {
     htmlTemplate += `
@@ -73,7 +67,6 @@ function appendColumnTo(columnsTo) {
 }
 
 function appendColumnTre(columnsTre) {
-  console.log(columnsTre);
   let htmlTemplate = "";
   for (let columnTre of columnsTre) {
     htmlTemplate += `
@@ -86,7 +79,6 @@ function appendColumnTre(columnsTre) {
 }
 
 function appendProduktEt(produkterEt) {
-  console.log(produkterEt);
   let htmlTemplate = "";
   for (let produktEt of produkterEt) {
     htmlTemplate += `
@@ -103,7 +95,6 @@ function appendProduktEt(produkterEt) {
 }
 
 function appendProduktTo(produkterTo) {
-  console.log(produkterTo);
   let htmlTemplate = "";
   for (let produktTo of produkterTo) {
     htmlTemplate += `
