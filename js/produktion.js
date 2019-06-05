@@ -19,10 +19,8 @@ function appendTextProduktion(appendTextsProduktion) {
   for (let appendTextProduktion of appendTextsProduktion) {
     htmlTemplate += `
             <section class="wide-text">
-              <h1>${appendTextProduktion['gsx$titel']['$t']}</h1>
-              <p>${appendTextProduktion['gsx$textet']['$t']}</p>
-              <p>${appendTextProduktion['gsx$textto']['$t']}</p>
-              <p>${appendTextProduktion['gsx$texttre']['$t']}</p>
+              <h1>${appendTextProduktion['gsx$produktionvelkomst']['$t']}</h1>
+              <p>${appendTextProduktion['gsx$produktionbeskrivelse']['$t']}</p>
             </section>
           `;
   }
@@ -34,9 +32,9 @@ function appendProduktEt(produkterEt) {
   for (let produktEt of produkterEt) {
     htmlTemplate += `
     <a href="unika.html">
-        <section class="module" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module" style="background:url('${produktEt['gsx$unikabillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h2>${produktEt['gsx$produktettext']['$t']}</h2>
+            <h2>${produktEt['gsx$unikatekst']['$t']}</h2>
           </section>
         </section>
         </a>
@@ -50,9 +48,9 @@ function appendProduktTo(produkterTo) {
   for (let produktTo of produkterTo) {
     htmlTemplate += `
     <a href="everyday.html">
-        <section class="module" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module" style="background:url('${produktTo['gsx$everydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h2>${produktTo['gsx$produkttotext']['$t']}</h2>
+            <h2>${produktTo['gsx$everydaytekst']['$t']}</h2>
           </section>
         </section>
       </a>

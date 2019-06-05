@@ -28,11 +28,11 @@ function appendFooterSectionEt(sectionsEt) {
   let htmlTemplate = "";
   for (let sectionEt of sectionsEt) {
     htmlTemplate += `
-              <h2>${sectionEt['gsx$sectionettitel']['$t']}</h2>
-              <p>${sectionEt['gsx$sectionettekstet']['$t']}<p/>
-              <p>${sectionEt['gsx$sectionettekstto']['$t']}<p/>
-              <p>${sectionEt['gsx$sectionetteksttre']['$t']}<p/>
-              <a href="mailto:${sectionEt['gsx$sectionettekstfire']['$t']}">${sectionEt['gsx$sectionettekstfire']['$t']}</a>
+              <h2>${sectionEt['gsx$firmanavn']['$t']}</h2>
+              <p>${sectionEt['gsx$gadenavn']['$t']}<p/>
+              <p>${sectionEt['gsx$kommune']['$t']}<p/>
+              <p>${sectionEt['gsx$telefon']['$t']}<p/>
+              <a href="mailto:${sectionEt['gsx$mail']['$t']}">${sectionEt['gsx$mail']['$t']}</a>
             `;
   }
   document.querySelector("#sectionEt").innerHTML += htmlTemplate;
@@ -42,10 +42,10 @@ function appendFooterSectionTo(sectionsTo) {
   let htmlTemplate = "";
   for (let sectionTo of sectionsTo) {
     htmlTemplate += `
-              <h2>${sectionTo['gsx$sectiontotitel']['$t']}</h2>
-              <p>${sectionTo['gsx$sectiontotekstet']['$t']}<p/>
-              <p>${sectionTo['gsx$sectiontotekstto']['$t']}<p/>
-              <p>${sectionTo['gsx$sectiontoteksttre']['$t']}<p/>
+              <h2>${sectionTo['gsx$åbningstider']['$t']}</h2>
+              <p>${sectionTo['gsx$man-fre']['$t']}<p/>
+              <p>${sectionTo['gsx$lørdag']['$t']}<p/>
+              <p>${sectionTo['gsx$sønoghelligdage']['$t']}<p/>
             `;
   }
   document.querySelector("#sectionTo").innerHTML += htmlTemplate;
@@ -55,8 +55,8 @@ function appendFooterSectionTre(sectionsTre) {
   let htmlTemplate = "";
   for (let sectionTre of sectionsTre) {
     htmlTemplate += `
-              <h2>${sectionTre['gsx$sectiontretitel']['$t']}</h2>
-              <a href="${sectionTre['gsx$sectiontrelink']['$t']}"><img src="images/facebook.svg" alt="Bülow Duus Facebook"></a>
+              <h2>${sectionTre['gsx$facebook']['$t']}</h2>
+              <a href="${sectionTre['gsx$facebooklink']['$t']}"><img src="images/facebook.svg" alt="Bülow Duus Facebook"></a>
             `;
   }
   document.querySelector("#sectionTre").innerHTML += htmlTemplate;

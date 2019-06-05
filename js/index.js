@@ -28,9 +28,9 @@ function appendHeaderImage(headerImages) {
   let htmlTemplate = "";
   for (let headerImage of headerImages) {
     htmlTemplate += `
-    <section class="module-wide" style="background:url('${headerImage['gsx$heroimage']['$t']}');background-size:cover;background-repeat: no-repeat;">
+    <section class="module-wide" style="background:url('${headerImage['gsx$forsidebillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
       <section class="module-wide-text">
-        <h1>${headerImage['gsx$heroimagetext']['$t']}</h1>
+        <h1>${headerImage['gsx$velkomsttekst']['$t']}</h1>
       </section>
     </section>
               `;
@@ -42,10 +42,10 @@ function appendColumnEt(columnsEt) {
   let htmlTemplate = "";
   for (let columnEt of columnsEt) {
     htmlTemplate += `
-        <h2>${columnEt['gsx$columnetoverskrift']['$t']}</h2>
-        <p>${columnEt['gsx$columnettextet']['$t']}</p>
+        <h2>${columnEt['gsx$kontaktos']['$t']}</h2>
+        <p>${columnEt['gsx$telefon']['$t']}</p>
         <p>Mail:
-          <a href="mailto:${columnEt['gsx$columnettextto']['$t']}">${columnEt['gsx$columnettextto']['$t']}</a>
+          <a href="mailto:${columnEt['gsx$mail']['$t']}">${columnEt['gsx$mail']['$t']}</a>
         </p>
           `;
   }
@@ -56,11 +56,11 @@ function appendColumnTo(columnsTo) {
   let htmlTemplate = "";
   for (let columnTo of columnsTo) {
     htmlTemplate += `
-        <h2>${columnTo['gsx$columntooverskrift']['$t']}</h2>
-        <p>${columnTo['gsx$columntotextet']['$t']}</p>
-        <p>${columnTo['gsx$columntotextto']['$t']}</p>
-        <p>${columnTo['gsx$columntotexttre']['$t']}</p>
-        <p>${columnTo['gsx$columntotextfire']['$t']}</p>
+        <h2>${columnTo['gsx$åbningstider']['$t']}</h2>
+        <p>${columnTo['gsx$man-fre']['$t']}</p>
+        <p>${columnTo['gsx$lørdag']['$t']}</p>
+        <p>${columnTo['gsx$sønoghelligdage']['$t']}</p>
+        <p>${columnTo['gsx$andretidspunkter']['$t']}</p>
               `;
   }
   document.querySelector("#columnTo").innerHTML += htmlTemplate;
@@ -70,9 +70,9 @@ function appendColumnTre(columnsTre) {
   let htmlTemplate = "";
   for (let columnTre of columnsTre) {
     htmlTemplate += `
-        <h2>${columnTre['gsx$columntreoverskrift']['$t']}</h2>
-        <p>${columnTre['gsx$columntretextet']['$t']}</p>
-        <p>${columnTre['gsx$columntretextto']['$t']}</p>
+        <h2>${columnTre['gsx$adresse']['$t']}</h2>
+        <p>${columnTre['gsx$gadenavn']['$t']}</p>
+        <p>${columnTre['gsx$kommune']['$t']}</p>
               `;
   }
   document.querySelector("#columnTre").innerHTML += htmlTemplate;
@@ -83,9 +83,9 @@ function appendProduktEt(produkterEt) {
   for (let produktEt of produkterEt) {
     htmlTemplate += `
     <a href="unika.html">
-        <section class="module" style="background:url('${produktEt['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module" style="background:url('${produktEt['gsx$unikabillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h2>${produktEt['gsx$produktettext']['$t']}</h2>
+            <h2>${produktEt['gsx$unikatekst']['$t']}</h2>
           </section>
         </section>
         </a>
@@ -99,9 +99,9 @@ function appendProduktTo(produkterTo) {
   for (let produktTo of produkterTo) {
     htmlTemplate += `
     <a href="everyday.html">
-        <section class="module" style="background:url('${produktTo['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+        <section class="module" style="background:url('${produktTo['gsx$everydaybillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="module-text">
-            <h2>${produktTo['gsx$produkttotext']['$t']}</h2>
+            <h2>${produktTo['gsx$everydaytekst']['$t']}</h2>
           </section>
         </section>
       </a>

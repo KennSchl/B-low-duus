@@ -25,7 +25,7 @@ function appendEventsEt(eventsEt) {
           <section class="cap-event-1">
             <h1>${eventEt['gsx$eventettitel']['$t']}</h1>
               <section class="cap-event-1">
-                <p>${eventEt['gsx$eventettext']['$t']}</p>
+                <p>${eventEt['gsx$eventetbeskrivelse']['$t']}</p>
               </section>
             </section>
       `;
@@ -41,10 +41,10 @@ function appendEventsTo(eventsTo) {
         <section class="module-event-1" style="background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('${eventTo['gsx$eventtobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
           <section class="cap-event-2">
             <h2>${eventTo['gsx$eventtotitel']['$t']}</h2>
-            <p>${eventTo['gsx$eventtotekst']['$t']}</p>
-            <p>${eventTo['gsx$eventtotekstto']['$t']}</p>
-            <p>${eventTo['gsx$eventtoteksttre']['$t']}</p>
-            <p>${eventTo['gsx$eventtotekstfire']['$t']}</p>
+            <p>${eventTo['gsx$eventtobeskrivelse']['$t']}</p>
+            <p>${eventTo['gsx$eventtovarighed']['$t']}</p>
+            <p>${eventTo['gsx$eventtopris']['$t']}</p>
+            <p>${eventTo['gsx$eventtoyderliginformation']['$t']}</p>
           </section>
         </section>
       `;

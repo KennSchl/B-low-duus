@@ -26,10 +26,8 @@ fetch(sheetUrlFire)
     for (let appendText of appendTexts) {
       htmlTemplate += `
             <section class="wide-text">
-              <h1>${appendText['gsx$titel']['$t']}</h1>
-              <p>${appendText['gsx$textet']['$t']}</p>
-              <p>${appendText['gsx$textto']['$t']}</p>
-              <p>${appendText['gsx$texttre']['$t']}</p>
+              <h1>${appendText['gsx$unikavelkomst']['$t']}</h1>
+              <p>${appendText['gsx$unikabeskrivelse']['$t']}</p>
             </section>
           `;
     }
@@ -40,9 +38,9 @@ function appendTopLeft(topLefts) {
   let htmlTemplate = "";
   for (let topLeft of topLefts) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${topLeft['gsx$topleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${topLeft['gsx$produktetbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${topLeft['gsx$topleft']['$t']}</h2>
+              <h2>${topLeft['gsx$produktettekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -54,9 +52,9 @@ function appendTopCenter(topCenters) {
   let htmlTemplate = "";
   for (let topCenter of topCenters) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${topCenter['gsx$topcenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${topCenter['gsx$produkttobillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${topCenter['gsx$topcenter']['$t']}</h2>
+              <h2>${topCenter['gsx$produkttotekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -68,9 +66,9 @@ function appendTopRight(topRights) {
   let htmlTemplate = "";
   for (let topRight of topRights) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${topRight['gsx$toprightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${topRight['gsx$produkttrebillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${topRight['gsx$topright']['$t']}</h2>
+              <h2>${topRight['gsx$produkttretekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -82,9 +80,9 @@ function appendCenterLeft(centerLefts) {
   let htmlTemplate = "";
   for (let centerLeft of centerLefts) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${centerLeft['gsx$centerleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${centerLeft['gsx$produktfirebillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${centerLeft['gsx$centerleft']['$t']}</h2>
+              <h2>${centerLeft['gsx$produktfiretekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -96,9 +94,9 @@ function appendCenterCenter(centerCenters) {
   let htmlTemplate = "";
   for (let centerCenter of centerCenters) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${centerCenter['gsx$centercenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${centerCenter['gsx$produktfembillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${centerCenter['gsx$centercenter']['$t']}</h2>
+              <h2>${centerCenter['gsx$produktfemtekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -110,9 +108,9 @@ function appendCenterRight(centerRights) {
   let htmlTemplate = "";
   for (let centerRight of centerRights) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${centerRight['gsx$centerrightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${centerRight['gsx$produktseksbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${centerRight['gsx$centerright']['$t']}</h2>
+              <h2>${centerRight['gsx$produktsekstekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -124,9 +122,9 @@ function appendBotLeft(botLefts) {
   let htmlTemplate = "";
   for (let botLeft of botLefts) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${botLeft['gsx$botleftbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${botLeft['gsx$produktsyvbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${botLeft['gsx$botleft']['$t']}</h2>
+              <h2>${botLeft['gsx$produktsyvtekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -138,9 +136,9 @@ function appendBotCenter(botCenters) {
   let htmlTemplate = "";
   for (let botCenter of botCenters) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${botCenter['gsx$botcenterbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${botCenter['gsx$produktottebillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${botCenter['gsx$botcenter']['$t']}</h2>
+              <h2>${botCenter['gsx$produktottetekst']['$t']}</h2>
             </section>
           </section>
         `;
@@ -152,9 +150,9 @@ function appendBotRight(botRights) {
   let htmlTemplate = "";
   for (let botRight of botRights) {
     htmlTemplate += `
-          <section class="split-3" style="background:url('${botRight['gsx$botrightbillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
+          <section class="split-3" style="background:url('${botRight['gsx$produktnibillede']['$t']}');background-size:cover;background-repeat: no-repeat;">
             <section class="split-3-text">
-              <h2>${botRight['gsx$botright']['$t']}</h2>
+              <h2>${botRight['gsx$produktnitekst']['$t']}</h2>
             </section>
           </section>
         `;
