@@ -529,6 +529,9 @@ footer h2 {
 .dropbtn a{
   margin-left: -1.2%;
 }
+.split-2-right {
+  margin-left: 0;
+}
 
 .split-3-left{
   margin-left: 0;
